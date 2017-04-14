@@ -15,7 +15,9 @@ The first example creates an autoscaling web farm distributed across all [Availa
 
 
 ## Consul.tf
-The second example creates a consul cluster distributed across all availability zones.  The servers find that each other using AWS priviledges.
+The second example creates a consul cluster distributed across all availability zones.  The servers find each other using AWS priviledges.
+
+![diagram](images/diagram.png)
 
 In this example terraform automatically creates IAM policies to enable auto join feature for consul on AWS.  The following permissions are required in order to make that automatic.
 
